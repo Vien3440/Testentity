@@ -16,7 +16,7 @@ class DefaultController extends Controller
     public function home(){
     // Init Doctrine
      $em = $this->getDoctrine();
-     //ci publier est true alors on retourne le post dans annonce photo
+     // on retourne notre table
         $nom = $em->getRepository("AppBundle:Name")->findAll();
         
        // retour info db dans variable 
